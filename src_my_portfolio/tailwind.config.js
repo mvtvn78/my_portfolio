@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './docs/**/*.{vue,md,ts,js}',
+    './docs/.vitepress/**/*.{vue,ts,js}',
   ],
   theme: {
     extend: {

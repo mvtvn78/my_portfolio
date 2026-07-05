@@ -1,0 +1,5 @@
+# Asset placeholders
+
+Copy original assets from `src/data/` (React project) into this folder.
+
+Required files — see README-migration.md for the full list.
