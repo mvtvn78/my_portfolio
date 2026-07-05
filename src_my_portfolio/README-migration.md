@@ -11,7 +11,7 @@ npm run build
 npm run preview
 ```
 
-Site deploy lên GitHub Pages với `base: /My_Portfolio/` (giữ nguyên URL cũ).
+Site deploy lên GitHub Pages với `base: /my_portfolio/` (giữ nguyên URL cũ).
 
 ```bash
 npm run deploy   # build + gh-pages → docs/.vitepress/dist

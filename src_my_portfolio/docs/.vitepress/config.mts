@@ -10,7 +10,7 @@ const tailwindConfig = path.resolve(dir, '../../tailwind.config.js')
 export default defineConfig({
   title: 'Solo Dev',
   description: 'mvtvn78 - Solo Dev Portfolio',
-  base: '/My_Portfolio/',
+  base: '/my_portfolio/',
   cleanUrls: true,
   appearance: false,
   head: [
