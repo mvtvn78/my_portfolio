@@ -1,1 +1,0 @@
-import{_ as e,b as t,e as n}from"./chunks/framework.Caf3y-_2.js";const _=JSON.parse('{"title":"mvtvn78","description":"","frontmatter":{"title":"mvtvn78"},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),a={name:"index.md"};function r(o,s,i,c,d,m){return t(),n("div")}const f=e(a,[["render",r]]);export{_ as __pageData,f as default};
