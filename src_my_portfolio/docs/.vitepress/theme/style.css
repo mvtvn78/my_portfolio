@@ -206,8 +206,9 @@ body {
 .hero-hire-btn:hover { transform: translateY(-2px) scale(1.04); box-shadow: 0 8px 28px rgba(0,0,0,0.3); }
 .hero-scroll {
   position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%);
-  font-family: var(--font-mono); font-size: 0.6rem;
-  color: rgba(255,255,255,0.4); letter-spacing: 0.2em;
+  font-family: var(--font-mono); font-size: 0.82rem;
+  color: #fff; letter-spacing: 0.2em;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.4);
   text-transform: uppercase; z-index: 10;
   animation: mvt-bounce 2.2s ease-in-out infinite;
 }

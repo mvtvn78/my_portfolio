@@ -241,7 +241,7 @@ const resources = {
       logo: 'Mai Văn Tiền · MVT',
       projects: 'Projects',
       contact: 'Contact',
-      copy: '© 2026 · Solo Dev · HCMC, Vietnam',
+      copy: '©mvtvn78 2026',
     },
     modal: {
       description: 'Mô tả chi tiết',
