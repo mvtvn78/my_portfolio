@@ -1,10 +1,14 @@
 <script setup lang="ts">
 import { ref, watch, onMounted, onUnmounted } from 'vue'
+import NavBar from './components/NavBar.vue'
 import HeroSection from './components/HeroSection.vue'
-import ProjectGrid from './components/ProjectGrid.vue'
+import AboutSection from './components/AboutSection.vue'
+import ServicesSection from './components/ServicesSection.vue'
+import ProjectsSection from './components/ProjectsSection.vue'
+import HireSection from './components/HireSection.vue'
+import SiteFooter from './components/SiteFooter.vue'
 import Modal from './components/Modal.vue'
-import CategoryFilter from './components/CategoryFilter.vue'
-import { useI18n } from './composables/useI18n'
+import { useFadeIn } from './composables/useFadeIn'
 import {
   getCategories,
   getProjectByUrl,
@@ -12,9 +16,8 @@ import {
   type ProjectFrontmatter,
 } from './composables/useProjects'
 
-const { t } = useI18n()
+useFadeIn()
 
-const isMuted = ref(true)
 const selectedCategory = ref('all')
 const selectedProject = ref<ProjectFrontmatter | null>(null)
 const projects = ref<ProjectFrontmatter[]>([])
@@ -75,34 +78,21 @@ function handleCloseModal() {
 </script>
 
 <template>
-  <div class="min-h-screen bg-gray-50">
-    <HeroSection
-      :is-muted="isMuted"
-      @toggle-mute="isMuted = !isMuted"
-    />
-
-    <CategoryFilter
+  <div>
+    <NavBar />
+    <HeroSection />
+    <AboutSection />
+    <ServicesSection />
+    <ProjectsSection
       :categories="categories"
       :active-category="selectedCategory"
+      :projects="projects"
+      :is-loading="isLoading"
       @category-change="selectedCategory = $event"
+      @project-click="handleProjectClick"
     />
-
-    <div class="pt-0">
-      <div class="max-w-7xl mx-auto px-4 py-4">
-        <h2 class="text-3xl font-bold mb-8 text-gray-800">
-          {{ t('nav.myProducts') }}
-        </h2>
-
-        <div v-if="isLoading" class="text-center py-12">
-          <p class="text-gray-500">Loading...</p>
-        </div>
-        <ProjectGrid
-          v-else
-          :projects="projects"
-          @project-click="handleProjectClick"
-        />
-      </div>
-    </div>
+    <HireSection />
+    <SiteFooter />
 
     <Modal
       :is-open="selectedProject !== null"

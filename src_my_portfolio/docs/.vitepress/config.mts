@@ -8,11 +8,15 @@ const dir = path.dirname(fileURLToPath(import.meta.url))
 const tailwindConfig = path.resolve(dir, '../../tailwind.config.js')
 
 export default defineConfig({
-  title: 'Portfolio',
-  description: 'Mai Văn Tiền (Mvt) - Portfolio',
+  title: 'Solo Dev',
+  description: 'mvtvn78 - Solo Dev Portfolio',
   base: '/My_Portfolio/',
   cleanUrls: true,
   appearance: false,
+  head: [
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+  ],
   vite: {
     css: {
       postcss: {

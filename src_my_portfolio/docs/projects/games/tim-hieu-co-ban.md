@@ -1,10 +1,9 @@
 ---
 url: Game-Tim-Hieu-Co-Ban
 category: games
-avatar: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPm9LONJfyfu-u05yRzqNRjBsWnXpjrLObnQ&s
 language: C++ / SDL2+
-image: /data/gameCplus.png
-videoURL: /data/gameSDL.mkv
+image: /data/gameCplus.webp
+videoURL: https://www.dropbox.com/scl/fi/wj18o45cunrtyiyh9lex3/gameSDL.mkv?rlkey=h0zwn8rk88lnf96qme3kjx2q6&st=norjgdm1&dl=0&raw=1
 linkGithub: github.com/mvtvn78/GameSimple
 finishedDay: "Oct 11, 2023"
 tech:

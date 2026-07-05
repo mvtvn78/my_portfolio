@@ -1,10 +1,9 @@
 ---
 url: SW-Trang-User-Mt5
 category: websites
-avatar: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfZcpvdnbhcRhQ_D-Gxk2yO_MEYCH6hGioKYRiM_rQjZJPez2kxbJ-ODzXYUFtU2uTh78&usqp=CAU
 language: React JS / Bootstrap
-image: /data/mt5_user.png
-videoURL: /data/mt5_user_demo.mp4
+image: /data/mt5_user.webp
+videoURL: https://www.dropbox.com/scl/fi/l0vuuemzhqff8bfp9aeau/mt5_user_demo.mp4?rlkey=tbgdzxdz2id1vlurjmha97o6x&st=27okka97&dl=0&raw=1
 linkGithub: github.com/mvtvn78/Front_end_mt5
 finishedDay: "May 22, 2024"
 tech:

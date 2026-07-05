@@ -1,9 +1,8 @@
 ---
 url: SW-ong-to-ba-nguyet
 category: mobile
-avatar: https://education.oracle.com/file/general/p-80-java.png
 language: Java - NodeJS
-image: /data/ungdung_lo.png
+image: /data/ungdung_lo.webp
 videoURL: https://www.dropbox.com/scl/fi/tzy9kwsjxnh1rumlihb90/ng-d-ng-l-u-ti-n.mp4?rlkey=5xmqkwh8u9ue0sgd77jdhvx3n&st=otdf91s0&raw=1
 linkGithub: Private
 finishedDay: "Jun 18, 2025"

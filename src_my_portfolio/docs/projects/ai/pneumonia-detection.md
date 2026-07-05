@@ -1,9 +1,8 @@
 ---
 url: AI-phat-hien-ung-thu
 category: ai
-avatar: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/219px-Python-logo-notext.svg.png
 language: Python - Tensorflow
-image: /data/pneum.png
+image: /data/pneum.webp
 videoURL: https://www.dropbox.com/scl/fi/wg27dgrgh8o4bpdismwyu/2025-12-19-10-24-41.mp4?rlkey=e1x8q4ec72xur5l55sljqkxna&st=p31kgl4p&dl=0&raw=1
 linkGithub: github.com/mvtvn78/pneumonia_classification
 finishedDay: "Oct 31, 2025"

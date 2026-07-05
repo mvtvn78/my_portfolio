@@ -1,10 +1,9 @@
 ---
 url: SW-Quan-Ly-Sinh-Vien-Win
 category: desktop
-avatar: https://s3-ap-southeast-1.amazonaws.com/homepage-media/wp-content/uploads/2020/03/04092434/NET_Core_Logo.png
 language: "Windows Forms : C#"
-image: /data/student_manager.png
-videoURL: /data/qlsv_sql.mkv
+image: /data/student_manager.webp
+videoURL: https://www.dropbox.com/scl/fi/80vtd1xlhd0w44g526ujz/qlsv_sql.mkv?rlkey=mcruuzjlwx2m9ktd0nen9lac6&st=avsdngks&dl=0&raw=1
 linkGithub: github.com/mvtvn78/Final_HomeWork_Win
 finishedDay: "Jun 9, 2024"
 tech:

@@ -1,9 +1,8 @@
 ---
 url: DH-Ha-Thu-Dong-Xuan
 category: desktop
-avatar: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPm9LONJfyfu-u05yRzqNRjBsWnXpjrLObnQ&s
 language: OpenGL/C++
-image: /data/dohoamaytinh.png
+image: /data/dohoamaytinh.webp
 videoURL: https://www.dropbox.com/scl/fi/gtntkj1jg09gfcmc2uecm/dohoamaytinh.mkv?rlkey=gt03fgj34yhtyvyklcqc28gt1&st=lefkqj3p&raw=1
 linkGithub: github.com/mvtvn78/da_dhmt
 finishedDay: "Dec 29, 2024"

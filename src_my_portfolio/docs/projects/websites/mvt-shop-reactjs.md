@@ -1,10 +1,9 @@
 ---
 url: SW-Do-An-WebsiteTinh-ReactJs
 category: websites
-avatar: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfZcpvdnbhcRhQ_D-Gxk2yO_MEYCH6hGioKYRiM_rQjZJPez2kxbJ-ODzXYUFtU2uTh78&usqp=CAU
 language: ReactJS framework
-image: /data/webshop.png
-videoURL: /data/webgameshop.mp4
+image: /data/webshop.webp
+videoURL: https://www.dropbox.com/scl/fi/ekayra4ep9qd4nu6vhczm/webgameshop.mp4?rlkey=b6ie51qjgrny3zpstw4ss81cy&st=xd9kq4pl&dl=0&raw=1
 linkGithub: github.com/mvtvn78/MvtGameShop
 finishedDay: "Mar 27, 2024"
 tech:

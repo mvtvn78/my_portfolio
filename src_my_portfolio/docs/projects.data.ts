@@ -3,7 +3,6 @@ import { createContentLoader } from 'vitepress'
 export interface ProjectFrontmatter {
   url: string
   category: string
-  avatar: string
   language?: string
   image: string
   videoURL: string | null

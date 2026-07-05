@@ -1,10 +1,9 @@
 ---
 url: Game-Do-An-Tri-Tue-Nhan-Tao
 category: games
-avatar: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/219px-Python-logo-notext.svg.png
 language: Python / Pygame
-image: /data/puzzle_game.png
-videoURL: /data/demo_puzzle.mkv
+image: /data/puzzle_game.webp
+videoURL: https://www.dropbox.com/scl/fi/8jv2dkrrzeufslv1cf2ii/demo_puzzle.mkv?rlkey=36zli4qh10mjncf53mmxh0kbk&st=3109ui08&dl=0&raw=1
 linkGithub: github.com/mvtvn78/PuzzleGame
 finishedDay: "Dec 22, 2023"
 tech:

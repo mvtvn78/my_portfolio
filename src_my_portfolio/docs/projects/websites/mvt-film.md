@@ -1,9 +1,8 @@
 ---
 url: SW-MvtFilm
 category: websites
-avatar: https://avatars.githubusercontent.com/u/958072?s=280&v=4
 language: PHP - Python - NodeJS
-image: /data/mvtfilm.png
+image: /data/mvtfilm.webp
 videoURL: https://www.dropbox.com/scl/fi/psmb6q58ofj8kswzi0435/mvtfilm.mkv?rlkey=xnlhb5a3afskp5tf2pcfjawm9&st=ggngvtn0&raw=1
 linkGithub: Private
 finishedDay: "Mar 25, 2025"

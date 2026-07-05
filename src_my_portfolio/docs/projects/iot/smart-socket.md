@@ -1,9 +1,8 @@
 ---
 url: IOT-o-cam-thong-minh
 category: iot
-avatar: https://education.oracle.com/file/general/p-80-java.png
 language: Java - SpringBoot
-image: /data/final_iot.jpg
+image: /data/final_iot.webp
 videoURL: https://www.dropbox.com/scl/fi/0ik0u7hng2r4mbue2uawv/cuoinam_iot.mp4?rlkey=waior6rzgip4szwm6srs8ve8w&st=6vhxldr7&dl=0&raw=1
 linkGithub: github.com/mvtvn78/final_iot
 finishedDay: "Jan 6, 2026"

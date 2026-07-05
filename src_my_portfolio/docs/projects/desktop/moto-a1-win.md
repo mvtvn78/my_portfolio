@@ -1,10 +1,9 @@
 ---
 url: SW-MotoA1-WinForm
 category: desktop
-avatar: https://s3-ap-southeast-1.amazonaws.com/homepage-media/wp-content/uploads/2020/03/04092434/NET_Core_Logo.png
 language: "Windows Forms : C#"
-image: /data/MotoA1.png
-videoURL: /data/motovideo.mp4
+image: /data/MotoA1.webp
+videoURL: https://www.dropbox.com/scl/fi/auo8wmtdyskyaaai7kf0u/motovideo.mp4?rlkey=ymhfz14hsyiq9evrf7qmpzltj&st=fbfs8jea&dl=0&raw=1
 linkGithub: github.com/mvtvn78/MotoA1
 finishedDay: "Aug 12, 2023"
 tech:

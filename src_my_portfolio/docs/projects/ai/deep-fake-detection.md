@@ -1,9 +1,8 @@
 ---
 url: AI-phat-hien-deepfake
 category: ai
-avatar: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/219px-Python-logo-notext.svg.png
 language: Python - Pytorch
-image: /data/dfake.png
+image: /data/dfake.webp
 videoURL: https://www.dropbox.com/scl/fi/3kkmkj9jmy8bz0czgba6p/2025-12-19-10-19-26.mp4?rlkey=k31qrist4x5y4rg88zvf27f0s&st=nnvslmx8&dl=0&raw=1
 linkGithub: github.com/mvtvn78/deepPhake
 finishedDay: "May 17, 2025"

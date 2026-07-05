@@ -1,10 +1,9 @@
 ---
 url: SW-BackendBasic-Mt5
 category: websites
-avatar: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYrNVwxlBhUzwBd6H4YqdJckckasr4N6PjQw&s
 language: Node JS / MySQL /MVC
-image: /data/demoBEmt5.png
-videoURL: /data/backendfirst.mkv
+image: /data/demoBEmt5.webp
+videoURL: https://www.dropbox.com/scl/fi/csk7k5cz37lea8mb7kkho/backendfirst.mkv?rlkey=vq1u59tytokbviklxgdlbpn5x&st=e1poejoh&dl=0&raw=1
 linkGithub: github.com/mvtvn78/BackEnd_mt5
 finishedDay: "Jun 11, 2024"
 tech:

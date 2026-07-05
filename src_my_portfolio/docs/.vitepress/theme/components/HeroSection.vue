@@ -1,109 +1,68 @@
 <script setup lang="ts">
-import { ExternalLink, Mail, Volume2, VolumeX } from 'lucide-vue-next'
+import { ref, onMounted } from 'vue'
 import { author } from '../composables/useAuthor'
 import { useI18n } from '../composables/useI18n'
 import { assetUrl } from '../composables/useAssetUrl'
 
-defineProps<{
-  isMuted: boolean
-}>()
+const { t } = useI18n()
+const videoRef = ref<HTMLVideoElement | null>(null)
 
-const emit = defineEmits<{
-  toggleMute: []
-}>()
-
-const { t, language, changeLanguage } = useI18n()
-
-function openGithub() {
-  window.open(author.githubLink, '_blank', 'noopener')
+function onAvatarError(e: Event) {
+  const img = e.target as HTMLImageElement
+  img.src = author.avatarFallback
 }
 
-function openEmail() {
-  window.open(
-    'https://mail.google.com/mail/?view=cm&fs=1&to=' + author.emailContact,
-    '_blank',
-    'noopener',
-  )
-}
+onMounted(async () => {
+  const video = videoRef.value
+  if (!video) return
+
+  video.muted = true
+  video.defaultMuted = true
+
+  try {
+    await video.play()
+  } catch {
+    // Autoplay blocked — gradient fallback remains visible
+  }
+})
 </script>
 
 <template>
-  <div class="relative w-full h-[450px] bg-white overflow-hidden">
+  <section id="hero">
     <video
-      :muted="isMuted"
+      v-if="author.coverVideo"
+      ref="videoRef"
+      class="hero-video"
+      :src="assetUrl(author.coverVideo)"
       autoplay
+      muted
       loop
-      class="absolute inset-0 w-full h-full object-cover"
-    >
-      <source :src="assetUrl(author.coverVideo)" type="video/webm" />
-    </video>
+      playsinline
+      preload="auto"
+    />
 
-    <div class="absolute inset-0 bg-black/20" />
+    <div class="hero-overlay" aria-hidden="true" />
 
-    <div class="absolute top-4 right-4 z-10 flex gap-2">
-      <div class="flex items-center gap-1 bg-white/80 rounded-full p-1 backdrop-blur-sm">
-        <button
-          type="button"
-          class="px-3 py-2 rounded-full font-medium transition-colors"
-          :class="language === 'en' ? 'bg-blue-500 text-white' : 'text-gray-700 hover:bg-gray-200'"
-          @click="changeLanguage('en')"
-        >
-          EN
-        </button>
-        <button
-          type="button"
-          class="px-3 py-2 rounded-full font-medium transition-colors"
-          :class="language === 'vi' ? 'bg-blue-500 text-white' : 'text-gray-700 hover:bg-gray-200'"
-          @click="changeLanguage('vi')"
-        >
-          VI
-        </button>
-      </div>
+    <div class="hero-avatar-wrap fade-in">
+      <img
+        :src="assetUrl(author.avatarURL)"
+        :alt="author.authorName"
+        @error="onAvatarError"
+      />
     </div>
 
-    <div class="absolute bottom-4 right-4 z-10 flex gap-2">
-      <button
-        type="button"
-        class="p-2 rounded-full bg-white/80 hover:bg-white transition-colors"
-        :title="isMuted ? t('hero.soundOn') : t('hero.soundOff')"
-        @click="emit('toggleMute')"
-      >
-        <VolumeX v-if="isMuted" class="w-5 h-5" />
-        <Volume2 v-else class="w-5 h-5" />
-      </button>
+    <h1 class="hero-name fade-in" style="transition-delay:0.1s">
+      {{ author.authorName }}
+    </h1>
 
-      <button
-        type="button"
-        class="p-2 rounded-full bg-white/80 hover:bg-white transition-colors"
-        :title="t('hero.myGithub')"
-        @click="openGithub"
-      >
-        <ExternalLink class="w-5 h-5" />
-      </button>
+    <p class="hero-sub fade-in" style="transition-delay:0.2s">
+      {{ t('hero.subtitle') }}
+    </p>
 
-      <button
-        type="button"
-        class="p-2 rounded-full bg-white/80 hover:bg-white transition-colors"
-        :title="t('hero.myEmail')"
-        @click="openEmail"
-      >
-        <Mail class="w-5 h-5" />
-      </button>
-    </div>
+    <a href="#hire" class="hero-hire-btn fade-in" style="transition-delay:0.42s">
+      {{ t('hero.hireNow') }}
+    </a>
 
-    <div class="absolute inset-0 flex flex-col items-center justify-end pb-16">
-      <div class="relative">
-        <img
-          :src="assetUrl(author.avatarURL)"
-          alt="avatar"
-          class="w-48 h-48 rounded-full border-4 border-white object-cover shadow-lg"
-        />
-      </div>
-      <div class="text-center mt-4">
-        <h1 class="text-3xl font-bold text-white drop-shadow-lg">
-          {{ author.authorName }}
-        </h1>
-      </div>
-    </div>
-  </div>
+    <div class="hero-scroll">{{ t('hero.scroll') }}</div>
+  </section>
 </template>
