@@ -25,15 +25,15 @@ vi:
   role:
     - Tất cả
 en:
-  title: Music Admin Page Mt5
-  about: Admin website using pure HTML, CSS, JS, with Jquery for operations
+  title: HiddenVerse User & Content Management Website
+  about: A website for publishing posts and managing game-related content.
   features:
-    - RBAC permission management
-    - Content & approval process management
-    - Content publishing
-    - AI integration for article evaluation
-    - Using Graph RAG for advising users on gaming
-    - Sepay integration for payments
+    - Role-Based Access Control (RBAC)
+    - Content Management & Approval Workflow
+    - Content Publishing
+    - AI-Powered Article Evaluation
+    - Graph RAG Integration for In-Game Assistance and Player Guidance
+    - SePay Payment Integration
   role:
-    - All
+    - Full-Stack Developer
 ---
